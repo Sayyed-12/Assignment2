@@ -3,7 +3,9 @@ function reverseAndCombineWords(input) {
 
   while (words.length > 1) {
     // Reverse each word
-    words = words.map(word => [...word].reverse().join(''));
+    words = words.map(word => [...word].reverse().join(''));    
+    /*spread syntax: let word = "abc";
+      [...word] === ["a", "b", "c"]; */
 
     // Combine pairs
     words = words.reduce((acc, word, i, arr) => {
