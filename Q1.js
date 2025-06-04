@@ -2,13 +2,13 @@ function reverseAndCombineWords(input) {
   let words = input.trim().split(/\s+/);
 
   while (words.length > 1) {
-    // Reverse each word
+    // reverse each word
     words = words.map(word => [...word].reverse().join(''));
 
     // Combine pairs
     words = words.reduce((acc, word, i, arr) => {
       if (i % 2 === 0) {
-        // If it's the last element and no pair, just add it
+        // If it's the last element and no pair, jst add it
         const next = arr[i + 1] !== undefined ? arr[i + 1] : '';
         acc.push(word + next);
       }
