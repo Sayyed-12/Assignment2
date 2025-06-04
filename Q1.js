@@ -1,4 +1,8 @@
 function reverseAndCombineWords(input) {
+  if (input.trim() === "") {
+    throw new Error("Empty String not allowed");
+  }
+
   let words = input.trim().split(/\s+/);
 
   while (words.length > 1) {
@@ -8,7 +12,6 @@ function reverseAndCombineWords(input) {
     // Combine pairs
     words = words.reduce((acc, word, i, arr) => {
       if (i % 2 === 0) {
-        // If it's the last element and no pair, jst add it
         const next = arr[i + 1] !== undefined ? arr[i + 1] : '';
         acc.push(word + next);
       }
@@ -27,3 +30,5 @@ console.log(reverseAndCombineWords("abc def ghi 123"));
 
 console.log(reverseAndCombineWords("abc def gh34 434ff 55_eri 123 343")); 
 // Output: "43hgff434cbafed343ire_55321"
+
+module.exports = reverseAndCombineWords;

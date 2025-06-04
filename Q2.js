@@ -1,3 +1,4 @@
+ 
 function titleCase(title, minorWords) {
   if (!title) return '';
 
@@ -29,3 +30,6 @@ console.log(titleCase('THE WIND IN THE WILLOWS', 'The In'));
 
 console.log(titleCase('the quick brown fox')); 
 // Output: "The Quick Brown Fox"
+
+
+module.exports=titleCase
