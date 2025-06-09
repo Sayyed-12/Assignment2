@@ -19,7 +19,7 @@ Note: The property that numbers must satisfy is defined in the problem descripti
   
 
 
-function sumDigPow(a, b) {
+function sum(a, b) {
   let result = [];
 
   for (let i = a; i <= b; i++) {
@@ -36,4 +36,4 @@ function sumDigPow(a, b) {
 
   return result;
 }
-module.exports = sumDigPow;
+module.exports = sum ;
