@@ -14,7 +14,7 @@ describe('movingShift and demovingShift', () => {
   test('movingShift followed by demovingShift returns original string', () => {
     const encoded = movingShift(input, initialShift);
     const decoded = demovingShift(encoded, initialShift);
-    expect(decoded).toEqual(input); // ✅ Fixed .toEqual
+    expect(decoded).toEqual(input); // 
   });
 
   test('known example matches expected parts', () => {
