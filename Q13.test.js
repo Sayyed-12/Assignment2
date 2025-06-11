@@ -1,6 +1,6 @@
 const decodeMorse = require('./Q13');
 
-// Simulated MORSE_CODE object (normally preloaded in kata platform)
+ 
 const MORSE_CODE = {
   '.-':     'A',
   '-...':   'B',
