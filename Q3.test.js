@@ -1,4 +1,4 @@
-// Q3.test.js
+ 
 const countBits = require('./Q3');
 
 test("returns correct number of 1s in binary representation", () => {
